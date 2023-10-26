@@ -6,7 +6,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
 const token = process.env.TG_TOKEN;
-//const bot = new TelegramBot(token, {polling: true});
+const bot = new TelegramBot(token, {polling: true});
 
 function getNotified(url, filename) {
   setInterval(() => {
